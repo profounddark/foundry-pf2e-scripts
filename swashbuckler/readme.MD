@@ -13,7 +13,9 @@ This folder contains four files: two .JS files corresponding to Macros and two .
 ### Creating the Effect Item
 
 This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Panache" so it's clear to everybody what it is. In the Rule ELement section, you need to add the two rules: [rule-panache-1.json](./rule-panache-1.json) and [rule-panache-2.json](./rule-panache-2.json). The First Rule adds the Panache Precise Strike damage for normal attacks while the Second Rule adds the Precise Strike damage for Finisher attacks.
+
 ![Image of the Panache Effect Item](./effect-panache.png)
+
 With the Effect Item created, you can now add Panache to a PC by dragging the Item onto a PC Character Sheet. It will appear in the Effects Tab of the Character Sheet. With it added to the character, the flat Precise Strike damage will be applied to all attacks made with an agile or finesse weapon.
 
 ### Using the Toggle Panache Macro
