@@ -5,7 +5,8 @@ Tabletop system running Pathfinder, Second Edition.
 
 ## Contents
 
-[(1) Swashbuckler Panache and Confident Finisher Macros](./swashbuckler/): Rule Elements, Macros, and instructions on setting up a Swashbuckler Panache Macro and a Confident Finisher Macro.
+1. [Swashbuckler Panache and Confident Finisher Macros](./swashbuckler/): Rule Elements, Macros, and instructions on setting up a Swashbuckler Panache Macro and a Confident Finisher Macro.
+2. [Barbarian Rage](./barbarian/): Rule Elements, Macro, and instructions on setting up a Barbarian Rage Macro. Currently only supports Draconic Rage.
 
 ## Usage
 
