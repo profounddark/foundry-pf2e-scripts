@@ -7,6 +7,7 @@ Tabletop system running Pathfinder, Second Edition.
 
 1. [Swashbuckler Panache and Confident Finisher Macros](./swashbuckler/): Rule Elements, Macros, and instructions on setting up a Swashbuckler Panache Macro and a Confident Finisher Macro.
 2. [Barbarian Rage](./barbarian/): Rule Elements, Macro, and instructions on setting up a Barbarian Rage Macro. Currently only supports Draconic Rage.
+3. [Extra Stuff](./extra/): Extra scripts. Right now, it's just a particular script I built for the Vermlek Worm Demon.
 
 ## Usage
 
