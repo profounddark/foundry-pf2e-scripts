@@ -1,6 +1,6 @@
 # Swashbuckler Panache
 
-These scripts are intended to make the Swashbuckler Panache available.
+These scripts are intended to make the Swashbuckler Panache work in FoundryVTT. It's still very preliminary; basically, it's just enough to make it work for the player at my table that's a Swashbuckler.
 
 ## Supported Versions
 
@@ -8,11 +8,11 @@ These scripts were written for FoundryVTT 0.6.6 with PF2E version 1.10.10.1973.
 
 ## Usage
 
-This folder contains four files: two .JS files corresponding to Macros and two .JSON files corresponding to Rules Elements for an Effect Item.
+This folder contains four files: two .JS files corresponding to Macros and two .JSON files corresponding to Rules Elements for an Effect Item. There's also a .JSON file containing the exported data for the Effect Item, in case you have trouble making your own.
 
 ### Creating the Effect Item
 
-This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Panache" so it's clear to everybody what it is. In the Rule ELement section, you need to add the two rules: [rule-panache-1.json](./rule-panache-1.json) and [rule-panache-2.json](./rule-panache-2.json). The First Rule adds the Panache Precise Strike damage for normal attacks while the Second Rule adds the Precise Strike damage for Finisher attacks.
+This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Panache" so it's clear to everybody what it is. In the Rule Element section, you need to add the two rules: [rule-panache-1.json](./rule-panache-1.json) and [rule-panache-2.json](./rule-panache-2.json). The First Rule adds the Panache Precise Strike damage for normal attacks while the Second Rule adds the Precise Strike damage for Finisher attacks.
 
 ![Image of the Panache Effect Item](./effect-panache.png)
 

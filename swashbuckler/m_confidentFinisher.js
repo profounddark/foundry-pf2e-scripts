@@ -3,27 +3,26 @@ const effectName = "Effect: Panache";
 const toggleMacroName = "Toggle Panache";
 
 (async () => {
+    // I added this for usability; basically, it checks to see if it's a PC and they have the Confident Finisher feature
     if (actor && actor.isPC && actor.items.find(entry => (entry.name === "Confident Finisher" && entry.type === "feat"))) {
+        
+        // this fetches to see if the PC has the Panache Effect added
         const panacheEffect = actor.items.find(entry => (entry.name === effectName && entry.type === "effect"));
 
         if (panacheEffect) {
 
-            // await actor.setRollOption("damage-roll", "finisher", true);
-            // actor.data.flags.pf2e.rollOptions["damage-roll"].finisher = true;
+            // Note: this is a workaround of actor.setRollOption
             const flag = 'rollOptions.damage-roll.finisher';
             await actor.setFlag(game.system.id, flag, true);
-
-            // await actor.toggleRollOption('damage-roll', 'finisher');
-            console.log("toggled option");
-
+            
             let strike = (actor.data.data.actions ?? []).filter(action => action.type === 'strike').find(strike => strike.name === weaponName);
 
             let opts = await actor.getRollOptions(['all', 'damage-roll']);
-            console.log(opts);
             await strike.damage(null, opts);
 
             actor.unsetRollOption('damage-roll', 'finisher');
             
+            // run the togglePanache macro.
             let togglePanache = game.macros.getName(toggleMacroName);
             togglePanache.execute();
             
