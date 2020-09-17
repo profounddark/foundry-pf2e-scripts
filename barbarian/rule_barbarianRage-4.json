@@ -1,0 +1,5 @@
+{
+  "key": "PF2E.RuleElement.TempHP",
+  "label": "Rage",
+  "value": "@abilities.con.mod + @details.level.value"
+}

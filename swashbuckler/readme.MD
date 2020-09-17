@@ -18,7 +18,7 @@ This macro set requires that a new Effect Item. Create a new Item of type Effect
 
 With the Effect Item created, you can now add Panache to a PC by dragging the Item onto a PC Character Sheet. It will appear in the Effects Tab of the Character Sheet. With it added to the character, the flat Precise Strike damage will be applied to all attacks made with an agile or finesse weapon.
 
-*NOTE*: I have also added an exported version of my Effect Item as well which you can import if you have trouble setting it up yourself. You can find that item here in the file [effect-item.json](./effect-item.json).
+**NOTE**: I have also added an exported version of my Effect Item as well which you can import if you have trouble setting it up yourself. You can find that item here in the file [panache-effect-item.json](./panache-effect-item.json).
 
 ### Using the Toggle Panache Macro
 
