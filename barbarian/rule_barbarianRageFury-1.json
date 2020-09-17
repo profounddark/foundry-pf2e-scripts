@@ -1,0 +1,15 @@
+{
+  "key": "PF2E.RuleElement.FlatModifier",
+  "selector": "damage",
+  "label": "Rage",
+  "predicate": {
+    "not": ["agile"]
+  },
+  "value": {
+    "brackets": [
+      { "end": 6, "value": 2 },
+      { "start": 7, "end": 14, "value": 6 },
+      { "start": 15, "value": 12 }
+    ]
+  }
+}

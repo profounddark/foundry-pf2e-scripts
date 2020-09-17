@@ -12,13 +12,15 @@ This folder contains five files: one .JS files corresponding to the Macro to tog
 
 ### Creating the Effect Item
 
-This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Draconic Rage" so it's clear to everybody what it is. In the Rule Element section, you need to add the four rules: [rule-barbarianRage-1.json](./rule-barbarianRage-1.json), [rule-barbarianRage-2.json](./rule-barbarianRage-2.json), [rule-barbarianRage-3.json](./rule-barbarianRage-3.json), and [rule-barbarianRage-4.json](./rule-barbarianRage-4.json). The first two rules add the damage bonus (for both agile and non-agile weapons). The third rule adds the AC penalty. The fourth rule adds temporary hit points.
+This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Draconic Rage" so it's clear to everybody what it is. In the Rule Element section, you need to add the four rules: [rule-barbarianRageDraconic-1.json](./rule-barbarianRageDraconic-1.json), [rule-barbarianRageDraconic-2.json](./rule-barbarianRageDraconic-2.json), [rule-barbarianRage-3.json](./rule-barbarianRage-3.json), and [rule-barbarianRage-4.json](./rule-barbarianRage-4.json). The first two rules add the damage bonus (for both agile and non-agile weapons). The third rule adds the AC penalty. The fourth rule adds temporary hit points. This will allow a Barbarian with the Dragon Instinct class feature to use Rage.
 
-**NOTE**: The rule here is set for the damage modifier associated with Draconic Rage. Other Rages may have different rules; I haven't gotten to those yet, so your results may vary.
+You will also want to create a similar Effect Item for Fury Rage called "Effect: Fury Rage," and apply [rule-barbarianRageFury-1.json](./rule-barbarianRageFury-1.json), [rule-barbarianRageFury-2.json](rule-barbarianRageFury-3.json), and rules 3 & 4 that you used for the Draconic Rage. This will allow a Barbarian with the Fury Instinct class feature to use Rage.
+
+**NOTE**: The rules here is set for the damage modifier associated with Draconic and Fury Rage. Other Rages may have different rules; I haven't gotten to those yet, so your results may vary.
 
 With the Effect Item created, you can now add Draconic Rage to a PC by dragging the Item onto a PC Character Sheet. It will appear in the Effects Tab of the Character Sheet. With it added to the character, all of the effects will be applied to the character.
 
-**NOTE**: I have also added an exported version of my Effect Item as well which you can import if you have trouble setting it up yourself. You can find that item here in the file [rage-effect-item.json](./rage-effect-item.json).
+**NOTE**: I have also added an exported version of my Effect Items as well which you can import if you have trouble setting it up yourself. You can find those items here in the following files: [draconicRage-effectItem.json](./draconicRage-effectItem.json) and [furyRage-effectItem.json](./furyRage-effectItem.json).
 
 ### Using the Toggle Rage Macro
 
@@ -32,4 +34,5 @@ Once you have set those two options, the macro should correctly toggle Rage on a
 
 ## Planned Updates
 
-1. Add support for different kinds of Rages.
+1. [COMPLETED] Add support for different kinds of Rages.
+2. Add Effect Items for other Rage types.
