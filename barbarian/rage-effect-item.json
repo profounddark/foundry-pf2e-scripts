@@ -51,20 +51,9 @@
       },
       {
         "key": "PF2E.RuleElement.FlatModifier",
-        "selector": "ac",
-        "label": "Rage",
-        "value": -1
-      },
-      {
-        "key": "PF2E.RuleElement.TempHP",
-        "label": "Rage",
-        "value": "@abilities.con.mod + @details.level.value"
-      },
-      {
-        "key": "PF2E.RuleElement.FlatModifier",
         "selector": "damage",
         "label": "Rage (Lesser)",
-        "type": "untyped",
+        "type": "acid",
         "predicate": {
           "all": [
             "agile"
@@ -87,6 +76,17 @@
             }
           ]
         }
+      },
+      {
+        "key": "PF2E.RuleElement.FlatModifier",
+        "selector": "ac",
+        "label": "Rage",
+        "value": -1
+      },
+      {
+        "key": "PF2E.RuleElement.TempHP",
+        "label": "Rage",
+        "value": "@abilities.con.mod + @details.level.value"
       }
     ],
     "level": {

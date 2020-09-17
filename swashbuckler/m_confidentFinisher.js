@@ -34,9 +34,3 @@ const toggleMacroName = "Toggle Panache";
         ui.notifications.warn("You must have a PC with the Confident Finisher feature selected.");
     }
 })();
-
-
-
-
-
-

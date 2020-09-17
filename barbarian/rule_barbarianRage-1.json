@@ -2,6 +2,7 @@
   "key": "PF2E.RuleElement.FlatModifier",
   "selector": "damage",
   "label": "Rage",
+  "type": "acid",
   "predicate": {
     "not": ["agile"]
   },

@@ -1,7 +1,8 @@
 {
   "key": "PF2E.RuleElement.FlatModifier",
   "selector": "damage",
-  "label": "Rage",
+  "label": "Rage (Lesser)",
+  "type": "acid",
   "predicate": {
     "all": ["agile"]
   },
