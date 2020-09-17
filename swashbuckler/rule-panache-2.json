@@ -1,0 +1,20 @@
+  {
+    "key": "PF2E.RuleElement.DamageDice",
+    "selector": "damage",
+    "dieSize": "d6",
+    "label": "Panache (Finisher)",
+    "category": "precision",
+    "predicate": {
+      "any": ["finesse", "agile"],
+      "all": ["finisher"] 
+    },
+    "value": {
+      "brackets": [
+        { "end": 4, "value": { "diceNumber": 2 } },
+        { "start": 5, "end": 8, "value": { "diceNumber": 3 } },
+        { "start": 9, "end": 12, "value": { "diceNumber": 4 } },
+        { "start": 13, "end": 16, "value": { "diceNumber": 6 } },
+        { "start": 17, "value": { "diceNumber": 7 } }
+      ]
+    }
+  }
