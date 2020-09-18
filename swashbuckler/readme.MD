@@ -36,5 +36,5 @@ There are three options that you can change at the top of the script: *effectNam
 
 ## Planned Updates
 
-1. Add a dialogue box to the Confident Finisher so the user can select normal damage, critical damage, or miss.
+1. [COMPLETED] Add a dialogue box to the Confident Finisher so the user can select normal damage, critical damage, or miss.
 2. Add support for the Precise Finisher Feat.
