@@ -21,7 +21,8 @@ async function strikeDamage(critical = false) {
     } else {
         await strike.damage(null, opts);
     }
-    actor.unsetRollOption('damage-roll', 'finisher');
+
+    await actor.setFlag(game.system.id, flag, false);
 
     togglePanache();
 }
