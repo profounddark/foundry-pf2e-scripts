@@ -24,7 +24,7 @@ With the Effect Item created, you can now add Draconic Rage to a PC by dragging 
 
 ### Using the Toggle Rage Macro
 
-The [m_togglePanache.js](./m_toggleRage.js) script is used as a convenient way to toggle the Barbarian Rage on and off. It also adds an Effect indicator on the Token and creates a Chat Message indicating the addition or removal of Panache. Create a macro in FoundryVTT and copy the text of the file into the Macro box. Make sure that it is set to *script* macro and not *chat* macro.
+The [m_toggleRage.js](./m_toggleRage.js) script is used as a convenient way to toggle the Barbarian Rage on and off. It also adds an Effect indicator on the Token and creates a Chat Message indicating the addition or removal of Panache. Create a macro in FoundryVTT and copy the text of the file into the Macro box. Make sure that it is set to *script* macro and not *chat* macro.
 
 There are three options that you can change at the top of the script: *rageNames*, *rageSound*, *effectName* and *imagePath*. *effectNames* is an array of the name of the Effect Items that you created before. If you named it "Effect: Draconic Rage" you will not need to change the script. However, if you named it something else, just change the value of *effectName*. *rageNames* is an object with key-value pairs. These are how the macro knows that "Dragon Instinct" corresponds to "Effect: Draconic Rage." If you change any names or add new rage types, you'll want to modify this. *imagePath* is the path in your FoundryVTT assets folder to the image you want to use on the token to represent that the character has Rage. I used a variation of the [Mighty Force](https://game-icons.net/1x1/delapouite/mighty-force.html) icon from [game-icons.net](https://game-icons.net).
 
