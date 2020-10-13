@@ -27,7 +27,14 @@ const imagePath = "assets/macro_icons/mighty-force.svg";
         }
       } else {
         // else if the actor is not in Rage, add Rage
-        await actor.createOwnedItem(game.items.getName(rageItem));
+        const pack = game.packs.get("world.effects");
+        await pack.getIndex();
+        // else if the actor is not in Panache, add Panache
+        const compEntry = pack.index.find(item => item.name === rageItem);
+        const effectItem = await pack.getEntity(compEntry._id);
+        await actor.createOwnedItem(effectItem);
+
+        // await actor.createOwnedItem(game.items.getName(rageItem));
 
         ChatMessage.create({ speaker: ChatMessage.getSpeaker({ token: token }), content: `The mighty ${actor.name} is in a rage!` }, { chatBubble: true });
 
