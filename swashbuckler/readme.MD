@@ -14,13 +14,17 @@ This folder contains four files: two .JS files corresponding to Macros and five 
 
 **NOTE: This requires activating the "Advanced Rules Element UI" in the System Settings.**
 
-This macro set requires either creating a new Item or modifying an existing one, such as the Panache Class Feature. I recommend that you copy the Panache Class Feature from the PF2E Compendium. In the Rule Element section, you need to add three rules. The content of these elements can be found in the following files: [rule-panache-1.json](./rule-panache-1.json); [rule-panache-2.json](./rule-panache-2.json); and [rule-panache-3.json](./rule-panache-3.json). The First Rule adds the Panache Precise Strike damage for normal attacks while the Second Rule adds the Precise Strike damage for Finisher attacks. The Third Rule creates a toggle for Panache in the Actions tab of the PC Character Sheet.
+To implement Panache, you need to add "rule elements" to an Item on the character. As different rules technically come from different Class Features, I've broken it down that way. The easiest way to implement this system is to add the following Class Features to your Swashbuckler character: Panache, Precise Strike, and Gymnast Style (for Gymnast Swashbucklers). In the Character sheet, go to the Class Features section and edit each one. On the Rule Elements tab, you'll want to add the rules from the following files:
+
+* For the Panache feature, add [rule-panache-1.json](./rule-panache-1.json) and [rule-panache-2.json](./rule-panache-2.json). This adds a "Panache" toggle box to the Actions section of the Character sheet and adds a +1 bonus to Acrobatics accessible if you Shift-click the skill from the Skills page of the Character Sheet.
+* For the Precise Strike feature, add [rule-precise-strike-1.json](./rule-precise-strike-1.json) and [rule-precise-strike-2.json](./rule-precise-strike-2.json). These rules add the precise strike damage when Panache is toggled on (and the bonus dice when a separate "finisher" flag is active).
+* For the Gymnast Style feature, add [rule-gymnast-1.json](./rule-gymnast-1.json). This will add a +1 bonus to Athletics that is available if you Shift-click the Athletics skill (similar to the +1 to Acrobatics).
 
 ![Image of the Panache Toggle](./panache-toggle.png)
 
-With those modifications made, add the Class Feature Item to the character for which you want to give Panache. You should see the Panache toggle in the Actions tab. At this point, you can "apply" Panache to the character by using that toggle. The Precise Strike damage will be applied to all agile or finesse attacks.
+If you added these changes to a custom Item, don't forget to add the Item to the PC. Once complete, you will see a Panache toggle in the Actions tab of the character sheet and a Precise Strike bonus to damage when you make finesse or agile attacks.
 
-**NOTE**: I have also added an exported version of my Class Feature Item as well which you can try toimport if you have trouble setting it up yourself. You can find that item here in the file [fvtt-Item-Panache.json](./fvtt-Item-Panache.json). However, this may not work, so adding the rule elements to your own item is preferred.
+**NOTE**: I have also added an exported version of my three Class Feature Items as well which you can try to import if you have trouble setting it up yourself. You can find those items here: [fvtt-Item-Panache.json](./fvtt-Item-Panache.json); [fvtt-Item-Precise_Strike.json](./fvtt-Item-Precise_Strike.json); and [fvtt-Item-Gymnast_Style](./fvtt-Item-Gymnast_Style.json). However, this may not work, so adding the rule elements to your own items is preferred.
 
 ### Using the Toggle Panache Macro
 
@@ -42,3 +46,4 @@ There are three options that you can change at the top of the script: *weaponNam
 2. Add support for the Precise Finisher Feat.
 3. [COMPLETED] Update for use with Toggle Rule Element.
 4. Update Confident Finisher to not rely on toggle macro.
+5. Add support for other Swashbuckler Styles.

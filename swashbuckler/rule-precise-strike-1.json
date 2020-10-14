@@ -1,0 +1,20 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "damage",
+    "label": "Panache",
+    "category": "precision",
+    "predicate": {
+      "all": ["panache"],
+      "any": ["finesse", "agile"],
+      "not": ["finisher"]
+    },
+    "value": {
+      "brackets": [
+        { "end": 4, "value": 2 },
+        { "start": 5, "end": 8, "value": 3 },
+        { "start": 9, "end": 12, "value": 4 },
+        { "start": 13, "end": 16, "value": 5 },
+        { "start": 17, "value": 6 }
+      ]
+    }
+  }

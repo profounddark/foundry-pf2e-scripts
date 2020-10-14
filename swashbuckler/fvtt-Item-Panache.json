@@ -33,105 +33,6 @@
       },
       {
         "key": "PF2E.RuleElement.FlatModifier",
-        "selector": "damage",
-        "label": "Panache",
-        "category": "precision",
-        "predicate": {
-          "all": [
-            "panache"
-          ],
-          "any": [
-            "finesse",
-            "agile"
-          ],
-          "not": [
-            "finisher"
-          ]
-        },
-        "value": {
-          "brackets": [
-            {
-              "end": 4,
-              "value": 2
-            },
-            {
-              "start": 5,
-              "end": 8,
-              "value": 3
-            },
-            {
-              "start": 9,
-              "end": 12,
-              "value": 4
-            },
-            {
-              "start": 13,
-              "end": 16,
-              "value": 5
-            },
-            {
-              "start": 17,
-              "value": 6
-            }
-          ]
-        }
-      },
-      {
-        "key": "PF2E.RuleElement.DamageDice",
-        "selector": "damage",
-        "dieSize": "d6",
-        "label": "Panache (Finisher)",
-        "category": "precision",
-        "predicate": {
-          "any": [
-            "finesse",
-            "agile"
-          ],
-          "all": [
-            "finisher",
-            "panache"
-          ]
-        },
-        "value": {
-          "brackets": [
-            {
-              "end": 4,
-              "value": {
-                "diceNumber": 2
-              }
-            },
-            {
-              "start": 5,
-              "end": 8,
-              "value": {
-                "diceNumber": 3
-              }
-            },
-            {
-              "start": 9,
-              "end": 12,
-              "value": {
-                "diceNumber": 4
-              }
-            },
-            {
-              "start": 13,
-              "end": 16,
-              "value": {
-                "diceNumber": 6
-              }
-            },
-            {
-              "start": 17,
-              "value": {
-                "diceNumber": 7
-              }
-            }
-          ]
-        }
-      },
-      {
-        "key": "PF2E.RuleElement.FlatModifier",
         "label": "Panache",
         "predicate": {
           "all": [
@@ -142,23 +43,6 @@
           ]
         },
         "selector": "acrobatics",
-        "type": "circumstance",
-        "value": 1
-      },
-      {
-        "key": "PF2E.RuleElement.FlatModifier",
-        "label": "Panache (Gymnast)",
-        "predicate": {
-          "all": [
-            "panache"
-          ],
-          "any": [
-            "grapple",
-            "shove",
-            "trip"
-          ]
-        },
-        "selector": "athletics",
         "type": "circumstance",
         "value": 1
       }
@@ -182,7 +66,7 @@
       "value": ""
     }
   },
-  "sort": 100001,
+  "sort": 100000,
   "flags": {
     "exportSource": {
       "world": "extinction-curse",

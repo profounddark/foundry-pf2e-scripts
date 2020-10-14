@@ -1,0 +1,77 @@
+{
+  "name": "Gymnast Style",
+  "type": "feat",
+  "data": {
+    "description": {
+      "value": "<p>You reposition, maneuver, and bewilder your foes with daring feats of physical prowess. You are trained in Athletics. You gain @Compendium[pf2e.classfeatures.LzYi0OuOoypNb6jd]{Panache} during an encounter whenever you successfully @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple}, @Compendium[pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}, or @Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} a foe.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "value": ""
+    },
+    "traits": {
+      "value": [
+        "swashbuckler"
+      ],
+      "custom": "",
+      "rarity": {
+        "value": "common"
+      }
+    },
+    "rarity": {
+      "value": "common"
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "rules": [
+      {
+        "key": "PF2E.RuleElement.FlatModifier",
+        "label": "Panache (Gymnast)",
+        "predicate": {
+          "all": [
+            "panache"
+          ],
+          "any": [
+            "grapple",
+            "shove",
+            "trip"
+          ]
+        },
+        "selector": "athletics",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "level": {
+      "value": "1"
+    },
+    "featType": {
+      "value": "classfeature"
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actionCategory": {
+      "value": ""
+    },
+    "actions": {
+      "value": ""
+    },
+    "prerequisites": {
+      "value": ""
+    }
+  },
+  "sort": 300000,
+  "flags": {
+    "exportSource": {
+      "world": "extinction-curse",
+      "system": "pf2e",
+      "coreVersion": "0.6.6",
+      "systemVersion": "1.10.13.2079"
+    }
+  },
+  "img": "systems/pf2e/icons/features/classes/wild-stride.jpg",
+  "_id": "elb8qeYo1m9V7RLc"
+}
