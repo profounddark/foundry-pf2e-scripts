@@ -9,21 +9,16 @@ function togglePanache() {
 }
 
 async function strikeDamage(critical = false) {
-    // Note: this is a workaround of actor.setRollOption
-    const finisherFlag = 'rollOptions.damage-roll.finisher';
-    // await actor.setFlag(game.system.id, finisherFlag, true);
 
     let strike = (actor.data.data.actions ?? []).filter(action => action.type === 'strike').find(strike => strike.name === weaponName);
     
     let opts = await actor.getRollOptions(['all', 'damage-roll']);
     opts.push("finisher");
     if (critical) {
-        await strike.critical(null, opts);
+        await strike.critical(event, opts);
     } else {
-        await strike.damage(null, opts);
+        await strike.damage(event, opts);
     }
-
-    // await actor.setFlag(game.system.id, finisherFlag, false);
 
     togglePanache();
 }
