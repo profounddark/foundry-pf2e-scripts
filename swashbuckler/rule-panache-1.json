@@ -4,6 +4,7 @@
     "label": "Panache",
     "category": "precision",
     "predicate": {
+      "all": ["panache"],
       "any": ["finesse", "agile"],
       "not": ["finisher"]
     },

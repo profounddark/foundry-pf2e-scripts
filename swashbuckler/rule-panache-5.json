@@ -1,0 +1,11 @@
+{
+  "key": "PF2E.RuleElement.FlatModifier",
+  "label": "Panache (Gymnast)",
+  "predicate": {
+    "all": ["panache"],
+    "any": ["grapple", "shove", "trip"]
+  },
+  "selector": "athletics",
+  "type": "circumstance",
+  "value": 1
+}

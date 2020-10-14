@@ -6,7 +6,7 @@
     "category": "precision",
     "predicate": {
       "any": ["finesse", "agile"],
-      "all": ["finisher"] 
+      "all": ["finisher", "panache"] 
     },
     "value": {
       "brackets": [
