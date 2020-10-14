@@ -1,39 +1,42 @@
-const effectName = "Effect: Panache";
 const imagePath = "assets/macro_icons/luchador.svg";
+const panacheFlag = 'rollOptions.all.panache';
 
-(async () => {
-  // checks to verify there is an actor (for GM), actor is a PC, and actor has the Panache feat/class feature
-  if (actor && actor.isPC && actor.items.find(entry => (entry.name === "Panache" && entry.type === "feat"))) {
-  
-    // checks if the actor has the Panache effect item
-    let panacheEffect = actor.items.find(entry => (entry.name === effectName && entry.type === "effect"));
-    
-    // if the actor DOES have the item
-    if (panacheEffect) {
-      // delete it
-      await actor.deleteOwnedItem(panacheEffect._id);
-      // make a message saying it no longer has Panache
-      ChatMessage.create({ speaker: ChatMessage.getSpeaker({ token: token }), content: `The Great ${actor.name} no longer has Panache!` }, { chatBubble: true });
+async function togglePanache() {
 
-      // if it has the token has the panache status icon, remove it
-      if (token.data.effects.includes(imagePath)) {
-        token.toggleEffect(imagePath)
-      }
+    if (actor && actor.isPC) {
+        let isPanache = await actor.getFlag(game.system.id, panacheFlag);
+
+        if (isPanache === undefined) {
+            // it's undefined, i.e., they don't have the Panache toggle
+            ui.notifications.warn("You must have a PC with the Panache feature selected.");
+        } else if (isPanache === false) {
+            // it's false, so set it
+            await actor.setFlag(game.system.id, panacheFlag, true);
+
+            // and send the chat message
+            ChatMessage.create({ speaker: ChatMessage.getSpeaker({ token: token }), content: `The Great ${actor.name} has Panache!` }, { chatBubble: true });
+
+            // if the token doesn't have the panache status icon, ad it.
+            if (!token.data.effects.includes(imagePath)) {
+                token.toggleEffect(imagePath);
+            }
+        } else if (isPanache === true) {
+            // it's true, so clear it
+            await actor.setFlag(game.system.id, panacheFlag, false);
+
+            // make a message saying it no longer has Panache
+            ChatMessage.create({ speaker: ChatMessage.getSpeaker({ token: token }), content: `The Great ${actor.name} no longer has Panache!` }, { chatBubble: true });
+
+            // if it has the token has the panache status icon, remove it
+            if (token.data.effects.includes(imagePath)) {
+                token.toggleEffect(imagePath)
+            }
+
+        }
     } else {
-      // else if the actor is not in Panache, add Panache
-      await actor.createOwnedItem(game.items.getName("Effect: Panache"));
-      // send a chat message
-      ChatMessage.create({ speaker: ChatMessage.getSpeaker({ token: token }), content: `The Great ${actor.name} has Panache!` }, { chatBubble: true });
-
-      // if the token doesn't have the panache status icon, ad it.
-      if (!token.data.effects.includes(imagePath)) {
-        token.toggleEffect(imagePath)
-      }
-
+        ui.notifications.warn("This macro only works with PC Actors.");
     }
-  } else {
-    ui.notifications.warn("You must have a PC with the Panache feature selected.");
-  }
-})(); 
 
+}
 
+togglePanache();

@@ -1,6 +1,6 @@
 const weaponName = "Powerful Fist";
-const effectName = "Effect: Panache";
 const toggleMacroName = "Toggle Panache";
+const panacheFlag = 'rollOptions.all.panache';
 
 function togglePanache() {
     let toggleMacro = game.macros.getName(toggleMacroName);
@@ -10,8 +10,8 @@ function togglePanache() {
 
 async function strikeDamage(critical = false) {
     // Note: this is a workaround of actor.setRollOption
-    const flag = 'rollOptions.damage-roll.finisher';
-    await actor.setFlag(game.system.id, flag, true);
+    const finisherFlag = 'rollOptions.damage-roll.finisher';
+    await actor.setFlag(game.system.id, finisherFlag, true);
 
     let strike = (actor.data.data.actions ?? []).filter(action => action.type === 'strike').find(strike => strike.name === weaponName);
 
@@ -22,7 +22,7 @@ async function strikeDamage(critical = false) {
         await strike.damage(null, opts);
     }
 
-    await actor.setFlag(game.system.id, flag, false);
+    await actor.setFlag(game.system.id, finisherFlag, false);
 
     togglePanache();
 }
@@ -43,9 +43,9 @@ async function missDamage() {
     if (actor && actor.isPC && actor.items.find(entry => (entry.name === "Confident Finisher" && entry.type === "feat"))) {
 
         // this fetches to see if the PC has the Panache Effect added
-        const panacheEffect = actor.items.find(entry => (entry.name === effectName && entry.type === "effect"));
+        const hasPanache = await actor.getFlag(game.system.id, panacheFlag);
 
-        if (panacheEffect) {
+        if (hasPanache) {
 
             let strikeBox = new Dialog({
                 title: "Confident Finisher",
