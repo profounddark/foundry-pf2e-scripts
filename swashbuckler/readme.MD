@@ -4,11 +4,11 @@ These scripts are intended to make the Swashbuckler Panache work in FoundryVTT. 
 
 ## Supported Versions
 
-These scripts were written for FoundryVTT 0.6.6 with PF2E version 1.10.13.2079.
+These scripts were written for FoundryVTT 0.6.6 with PF2E version 1.10.14.2139.
 
 ## Usage
 
-This folder contains four files: two .JS files corresponding to Macros and five .JSON files corresponding to Rules Elements for an Item. There's also a .JSON file containing the exported data for a Class Feature/Feat Item, in case you have trouble making your own.
+This folder contains four files: two .JS files corresponding to Macros and seven .JSON files corresponding to Rules Elements for Class Feature Items. The seven Rule Elements could all be placed on the same item, but I recommend placing them on their respective class features (see below).
 
 ### Creating the Effect Item
 
@@ -16,15 +16,14 @@ This folder contains four files: two .JS files corresponding to Macros and five 
 
 To implement Panache, you need to add "rule elements" to an Item on the character. As different rules technically come from different Class Features, I've broken it down that way. The easiest way to implement this system is to add the following Class Features to your Swashbuckler character: Panache, Precise Strike, and Gymnast Style (for Gymnast Swashbucklers). In the Character sheet, go to the Class Features section and edit each one. On the Rule Elements tab, you'll want to add the rules from the following files:
 
-* For the Panache feature, add [rule-panache-1.json](./rule-panache-1.json) and [rule-panache-2.json](./rule-panache-2.json). This adds a "Panache" toggle box to the Actions section of the Character sheet and adds a +1 bonus to Acrobatics accessible if you Shift-click the skill from the Skills page of the Character Sheet.
+* For the Panache feature, add [rule-panache-1.json](./rule-panache-1.json), [rule-panache-2.json](./rule-panache-2.json), and [rule-panache-3.json](./rule-panache-3.json). This adds a "Panache" toggle box to the Actions section of the Character sheet; toggling Panache on will add a bonus to the Swashbuckler's speed (based on their level) and adds a +1 bonus to Acrobatics for Tumble Through checks.
 * For the Precise Strike feature, add [rule-precise-strike-1.json](./rule-precise-strike-1.json) and [rule-precise-strike-2.json](./rule-precise-strike-2.json). These rules add the precise strike damage when Panache is toggled on (and the bonus dice when a separate "finisher" flag is active).
 * For the Gymnast Style feature, add [rule-gymnast-1.json](./rule-gymnast-1.json). This will add a +1 bonus to Athletics that is available if you Shift-click the Athletics skill (similar to the +1 to Acrobatics).
+* For the Vivacious Speed feature, add [rule-vivacious-speed-1.json](./rule-vivacious-speed-1.json). This will add the bonus to base speed (equal to half of the Panache bonus) when the Swashbuckler does NOT have Panache.
 
 ![Image of the Panache Toggle](./panache-toggle.png)
 
 If you added these changes to a custom Item, don't forget to add the Item to the PC. Once complete, you will see a Panache toggle in the Actions tab of the character sheet and a Precise Strike bonus to damage when you make finesse or agile attacks.
-
-**NOTE**: I have also added an exported version of my three Class Feature Items as well which you can try to import if you have trouble setting it up yourself. You can find those items here: [fvtt-Item-Panache.json](./fvtt-Item-Panache.json); [fvtt-Item-Precise_Strike.json](./fvtt-Item-Precise_Strike.json); and [fvtt-Item-Gymnast_Style](./fvtt-Item-Gymnast_Style.json). However, this may not work, so adding the rule elements to your own items is preferred.
 
 ### Using the Toggle Panache Macro
 
