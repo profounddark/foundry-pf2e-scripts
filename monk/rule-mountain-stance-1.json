@@ -1,0 +1,7 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "ac",
+    "label": "Mountain Stance",
+    "category": "status",
+    "value": 4
+}

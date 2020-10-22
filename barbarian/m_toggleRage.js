@@ -39,7 +39,7 @@ const imagePath = "assets/macro_icons/mighty-force.svg";
         ChatMessage.create({ speaker: ChatMessage.getSpeaker({ token: token }), content: `The mighty ${actor.name} is in a rage!` }, { chatBubble: true });
 
         // this line plays the sound effect. Delete it if you don't want a sound effect.
-        AudioHelper.play({ src: rageSound, volume: 1.0, autoplay: true, loop: false }, true);
+        AudioHelper.play({ src: rageSound, volume: 0.7, autoplay: true, loop: false }, true);
 
         if (!token.data.effects.includes(imagePath)) {
           token.toggleEffect(imagePath)

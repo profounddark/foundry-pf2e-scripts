@@ -1,0 +1,10 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "attack",
+    "label": "Ki Strike",
+    "category": "status",
+    "predicate": {
+      "any": ["unarmed", "monk"]
+    },
+    "value": 1
+  }

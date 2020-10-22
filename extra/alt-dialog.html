@@ -1,0 +1,11 @@
+<div class="dialog-content">
+    {{{content}}}
+</div>
+<div class="dialog-buttons" style="display: flex; flex-flow: column nowrap;">
+    {{#each buttons as |button id|}}
+    <button class="dialog-button" data-button="{{id}}">
+        {{{button.icon}}}
+        {{{button.label}}}
+    </button>
+    {{/each}}
+</div>

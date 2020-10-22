@@ -1,0 +1,19 @@
+  {
+    "key": "PF2E.RuleElement.DamageDice",
+    "selector": "damage",
+    "dieSize": "d6",
+    "label": "Ki Strike",
+    "category": "untyped",
+    "predicate": {
+      "any": ["unarmed", "monk"]
+    },
+    "value": {
+      "brackets": [
+        { "end": 4, "value": { "diceNumber": 1 } },
+        { "start": 5, "end": 9, "value": { "diceNumber": 2 } },
+        { "start": 10, "end": 14, "value": { "diceNumber": 3 } },
+        { "start": 15, "end": 19, "value": { "diceNumber": 4 } },
+        { "start": 20, "value": { "diceNumber": 5 } }
+      ]
+    }
+  }
