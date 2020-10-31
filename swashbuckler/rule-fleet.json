@@ -1,0 +1,7 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "speed",
+    "label": "Fleet",
+    "roll-options": ["speed", "all"],
+    "value": 5
+  }

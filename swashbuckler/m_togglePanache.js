@@ -3,7 +3,7 @@ const panacheFlag = 'rollOptions.all.panache';
 
 async function togglePanache() {
 
-    if (actor && actor.isPC) {
+    if (actor) {
         let isPanache = await actor.getFlag(game.system.id, panacheFlag);
 
         if (isPanache === undefined) {

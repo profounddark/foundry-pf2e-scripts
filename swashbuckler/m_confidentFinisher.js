@@ -4,7 +4,6 @@ const panacheFlag = 'rollOptions.all.panache';
 
 function togglePanache() {
     let toggleMacro = game.macros.getName(toggleMacroName);
-    console.log(toggleMacro);
     return toggleMacro.execute();
 }
 
@@ -36,7 +35,7 @@ async function missDamage() {
 
 (async () => {
     // I added this for usability; basically, it checks to see if it's a PC and they have the Confident Finisher feature
-    if (actor && actor.isPC && actor.items.find(entry => (entry.name === "Confident Finisher" && entry.type === "feat"))) {
+    if (actor && actor.items.find(entry => (entry.name === "Confident Finisher" && entry.type === "feat"))) {
 
         // this fetches to see if the PC has the Panache Effect added
         const hasPanache = await actor.getFlag(game.system.id, panacheFlag);

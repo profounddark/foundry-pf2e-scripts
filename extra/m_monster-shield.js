@@ -33,8 +33,6 @@ if (selectedTokens.length < 1) {
 } else {
     let foundShield = false;
     for (let aToken of selectedTokens) {
-        console.log(aToken.actor.data.type);
-        console.log(aToken.actor.data.data.attributes.shield.ac);
         if ((aToken.actor.data.type ==="npc") && (aToken.actor.data.data.attributes.shield.ac > 0)) {
             foundShield = true;
             toggleShield(aToken);
