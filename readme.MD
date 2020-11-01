@@ -7,7 +7,9 @@ Tabletop system running Pathfinder, Second Edition.
 
 1. [Swashbuckler Panache and Confident Finisher Macros](./swashbuckler/): Rule Elements, Macros, and instructions on setting up a Swashbuckler Panache Macro and a Confident Finisher Macro.
 2. [Barbarian Rage](./barbarian/): Rule Elements, Macro, and instructions on setting up a Barbarian Rage Macro. Currently only supports Draconic Rage.
-3. [Extra Stuff](./extra/): Extra scripts. Right now, it's just a particular script I built for the Vermlek Worm Demon.
+3. [Monk Effects](./monk/): Rule Elements for a few Monk abilities. I made these based on a discussion on the Foundry/PF2E Discord channel. Unfortunately, Monk stances require custom weapons, which is not something that can be easily done with rule elements.
+5. [Action Macros](./action-macros): These are simple macros for specific Actions. Some items and abilities give a bonus to a specific action (Treat Wounds, Tumble Through). These macros provide a way to make that work.
+4. [Extra Stuff](./extra/): Extra scripts. Right now, it's just a particular script I built for the Vermlek Worm Demon.
 
 ## Usage
 
