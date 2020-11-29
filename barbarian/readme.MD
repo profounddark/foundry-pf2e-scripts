@@ -8,11 +8,15 @@ These scripts were written for FoundryVTT 0.6.6 with PF2E version 1.10.10.1973.
 
 ## Usage
 
-This folder contains five files: one .JS files corresponding to the Macro to toggle Rage and four .JSON files corresponding to Rules Elements for an Effect Item. There's also a .JSON file containing the exported data for the Effect Item, in case you have trouble making your own.
+This folder contains five files: one .JS files corresponding to the Macro to toggle Rage and four .JSON files corresponding to Rules Elements for an Effect Item. In order to use these, you will have to turn on the _Advanced Rules Element UI_ in the PF2E System Settings.
 
 ### Creating the Effect Item
 
-This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Draconic Rage" so it's clear to everybody what it is. In the Rule Element section, you need to add the four rules: [rule-barbarianRageDraconic-1.json](./rule-barbarianRageDraconic-1.json), [rule-barbarianRageDraconic-2.json](./rule-barbarianRageDraconic-2.json), [rule-barbarianRage-3.json](./rule-barbarianRage-3.json), and [rule-barbarianRage-4.json](./rule-barbarianRage-4.json). The first two rules add the damage bonus (for both agile and non-agile weapons). The third rule adds the AC penalty. The fourth rule adds temporary hit points. This will allow a Barbarian with the Dragon Instinct class feature to use Rage.
+This macro set requires that a new Effect Item. Create a new Item of type Effect in the World's Item Directory. You can give it whatever name you'd like; I use "Effect: Draconic Rage" so it's clear to everybody what it is. You will want to give it an image because the image you select will appear on the token of the character to which you apply the rage. You can fill in the Description however you want; it's not SUPER important.
+
+![Rule Element Tab of the Effect Item](./img-rule-element.png)
+
+In the Rule Element section, you need to add the five rules: [rule-barbarianRageDraconic-1.json](./rule-barbarianRageDraconic-1.json), [rule-barbarianRageDraconic-2.json](./rule-barbarianRageDraconic-2.json), [rule-barbarianRage-3.json](./rule-barbarianRage-3.json), and [rule-barbarianRage-4.json](./rule-barbarianRage-4.json), and [rule-barbarianRage-5.json](./rule-barbarianRage-5.json). The first two rules add the damage bonus (for both agile and non-agile weapons). The third rule adds the AC penalty. The fourth rule adds temporary hit points. The fifth rule just makes the icon appear on the token. This will allow a Barbarian with the Dragon Instinct class feature to use Rage.
 
 You will also want to create a similar Effect Item for Fury Rage called "Effect: Fury Rage," and apply [rule-barbarianRageFury-1.json](./rule-barbarianRageFury-1.json), [rule-barbarianRageFury-2.json](rule-barbarianRageFury-3.json), and rules 3 & 4 that you used for the Draconic Rage. This will allow a Barbarian with the Fury Instinct class feature to use Rage.
 
@@ -20,19 +24,6 @@ You will also want to create a similar Effect Item for Fury Rage called "Effect:
 
 With the Effect Item created, you can now add Draconic Rage to a PC by dragging the Item onto a PC Character Sheet. It will appear in the Effects Tab of the Character Sheet. With it added to the character, all of the effects will be applied to the character.
 
-**NOTE**: I have also added an exported version of my Effect Items as well which you can import if you have trouble setting it up yourself. You can find those items here in the following files: [draconicRage-effectItem.json](./draconicRage-effectItem.json) and [furyRage-effectItem.json](./furyRage-effectItem.json).
-
-### Using the Toggle Rage Macro
-
-The [m_toggleRage.js](./m_toggleRage.js) script is used as a convenient way to toggle the Barbarian Rage on and off. It also adds an Effect indicator on the Token and creates a Chat Message indicating the addition or removal of Panache. Create a macro in FoundryVTT and copy the text of the file into the Macro box. Make sure that it is set to *script* macro and not *chat* macro.
-
-There are three options that you can change at the top of the script: *rageNames*, *rageSound*, *effectName* and *imagePath*. *effectNames* is an array of the name of the Effect Items that you created before. If you named it "Effect: Draconic Rage" you will not need to change the script. However, if you named it something else, just change the value of *effectName*. *rageNames* is an object with key-value pairs. These are how the macro knows that "Dragon Instinct" corresponds to "Effect: Draconic Rage." If you change any names or add new rage types, you'll want to modify this. *imagePath* is the path in your FoundryVTT assets folder to the image you want to use on the token to represent that the character has Rage. I used a variation of the [Mighty Force](https://game-icons.net/1x1/delapouite/mighty-force.html) icon from [game-icons.net](https://game-icons.net).
-
-*rageSound* is the path to a sound effect that plays when the Barbarian enters a rage. My PC's barbarian is a lizardfolk with a very Godzilla aesthetic, so it plays a Godzilla roar. You can change this as necessary (or remove it, if you'd like).
-
-Once you have set those two options, the macro should correctly toggle Rage on and off. When it is on, you should see an Effect icon on the character token and the Rage Effect Item listed on the Character Sheet. I recommend that you use the macro to add and remove Rage, as it will remove both the Effect Item and the token icon.
-
 ## Planned Updates
 
-1. [COMPLETED] Add support for different kinds of Rages.
-2. Add Effect Items for other Rage types.
+1. Add support for different kinds of Rages.
