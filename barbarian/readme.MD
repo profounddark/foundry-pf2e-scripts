@@ -4,7 +4,7 @@ These scripts are intended to make the Barbarian Rage work in FoundryVTT. It's s
 
 ## Supported Versions
 
-These scripts were written for FoundryVTT 0.6.6 with PF2E version 1.10.10.1973.
+These scripts were written for FoundryVTT 0.7.7 with PF2E version 1.10.17.2355.
 
 ## Usage
 

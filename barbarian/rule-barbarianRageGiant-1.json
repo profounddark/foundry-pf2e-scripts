@@ -4,13 +4,14 @@
   "label": "Draconic Rage",
   "category": "poison",
   "predicate": {
-    "not": ["agile"]
+    "not": ["agile"],
+    "all": ["oversized"]
   },
   "value": {
     "brackets": [
-      { "end": 6, "value": 4 },
-      { "start": 7, "end": 14, "value": 8 },
-      { "start": 15, "value": 16 }
+      { "end": 6, "value": 6 },
+      { "start": 7, "end": 14, "value": 10 },
+      { "start": 15, "value": 18 }
     ]
   }
 }
