@@ -2,7 +2,7 @@
   "key": "PF2E.RuleElement.FlatModifier",
   "selector": "damage",
   "label": "Draconic Rage (Lesser)",
-  "category": "poison",
+  "damageType": "poison",
   "predicate": {
     "all": ["agile"]
   },
