@@ -1,9 +1,9 @@
 {
   "key": "PF2E.RuleElement.FlatModifier",
   "selector": "damage",
-  "label": "Rage",
+  "label": "Rage (Lesser)",
   "predicate": {
-    "not": ["agile", "oversized"]
+    "all": ["agile"]
   },
   "value": {
     "brackets": [

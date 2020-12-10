@@ -1,11 +1,9 @@
 {
   "key": "PF2E.RuleElement.FlatModifier",
   "selector": "damage",
-  "label": "Draconic Rage",
-  "category": "poison",
+  "label": "Rage",
   "predicate": {
     "not": ["agile"],
-    "all": ["oversized"]
   },
   "value": {
     "brackets": [
