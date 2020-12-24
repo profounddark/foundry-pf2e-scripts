@@ -1,0 +1,6 @@
+{
+    "key":"PF2E.RuleElement.FlatModifier",
+    "selector":"initiative",
+    "type":"circumstance",
+    "value":2
+}

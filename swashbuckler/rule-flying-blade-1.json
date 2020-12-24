@@ -3,9 +3,9 @@
     "selector": "damage",
     "category": "precision",
     "predicate": {
-      "all": ["panache", "melee"],
+      "all": ["panache", "thrown"],
       "any": ["finesse", "agile"],
-      "not": ["finisher"]
+      "not": ["finisher", "melee"]
     },
     "value": {
       "brackets": [

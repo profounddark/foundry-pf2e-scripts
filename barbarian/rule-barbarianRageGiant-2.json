@@ -3,7 +3,7 @@
   "selector": "damage",
   "label": "Rage (Lesser)",
   "predicate": {
-    "all": ["agile"]
+    "all": ["agile", "oversize"]
   },
   "value": {
     "brackets": [

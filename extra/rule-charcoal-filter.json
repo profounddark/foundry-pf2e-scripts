@@ -1,0 +1,12 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "label": "Charcoal Philter",
+    "predicate": {
+        "any": [
+            "olfactory", "inhaled"
+        ]
+    },
+    "selector": "fortitude",
+    "type": "item",
+    "value": 2
+}

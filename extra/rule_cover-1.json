@@ -1,0 +1,10 @@
+{
+  "key": "PF2E.RuleElement.FlatModifier",
+  "selector": "reflex",
+  "type": "circumstance",
+  "label": "Standard Cover",
+  "value": 2,
+  "predicate": {
+    "all": ["area"]
+  }
+}

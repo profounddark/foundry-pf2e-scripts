@@ -1,0 +1,14 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "predicate": {
+        "all": [
+            "panache"
+        ],
+        "any": [
+            "demoralize"
+        ]
+    },
+    "selector": "intimidation",
+    "type": "circumstance",
+    "value": 1
+}

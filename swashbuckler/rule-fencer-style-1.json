@@ -1,0 +1,15 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "predicate": {
+        "all": [
+            "panache"
+        ],
+        "any": [
+            "feint",
+            "create-a-diversion"
+        ]
+    },
+    "selector": "deception",
+    "type": "circumstance",
+    "value": 1
+}

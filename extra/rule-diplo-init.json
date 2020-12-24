@@ -1,0 +1,11 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "damage",
+    "type": "status",
+    "label": "poop",
+    "value": 2,
+    "predicate": {
+        "any": ["thrown-weapon"]
+      }
+  }
+  

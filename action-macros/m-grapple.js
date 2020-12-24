@@ -1,4 +1,4 @@
-if (actor && actor.isPC) {
+if (actor && actor.hasPlayerOwner) {
     const options = actor.getRollOptions(['all', 'str-based', 'skill-check', 'athletics']);
     options.push("grapple");
     options.push("attack");

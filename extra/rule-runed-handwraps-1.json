@@ -1,0 +1,9 @@
+{
+  "key": "PF2E.RuleElement.FlatModifier",
+  "selector": "attack",
+  "type": "item",
+  "value": 1,
+  "predicate": {
+    "all": ["unarmed"]
+  }
+}

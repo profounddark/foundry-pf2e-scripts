@@ -5,7 +5,8 @@
     "category": "precision",
     "predicate": {
       "any": ["finesse", "agile"],
-      "all": ["finisher", "panache", "melee"] 
+      "all": ["finisher", "panache", "thrown"],
+      "not": ["melee"] 
     },
     "value": {
       "brackets": [

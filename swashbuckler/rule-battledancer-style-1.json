@@ -1,0 +1,14 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "predicate": {
+        "all": [
+            "panache"
+        ],
+        "any": [
+            "perform"
+        ]
+    },
+    "selector": "performance",
+    "type": "circumstance",
+    "value": 1
+}
