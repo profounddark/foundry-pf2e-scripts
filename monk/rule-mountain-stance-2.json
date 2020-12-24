@@ -2,6 +2,6 @@
     "key": "PF2E.RuleElement.FlatModifier",
     "selector": "ac",
     "label": "Mountain Stance",
-    "category": "status",
+    "type": "item",
     "value": 4
 }
