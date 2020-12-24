@@ -1,5 +1,7 @@
 {
-    "key": "PF2E.RuleElement.DexterityModifierCap",
-        "label": "Mountain Stance",
-    "value": 0
-  }
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "ac",
+    "label": "Mountain Stance",
+    "category": "status",
+    "value": 4
+}

@@ -1,7 +1,19 @@
 {
-    "key": "PF2E.RuleElement.FlatModifier",
-    "selector": "ac",
-    "label": "Mountain Stance",
-    "category": "status",
-    "value": 4
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Falling Stone",
+    "range": "melee",
+    "traits": [
+        "forceful",
+        "unarmed",
+        "nonlethal"
+    ]
 }
