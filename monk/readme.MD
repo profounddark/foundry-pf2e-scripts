@@ -26,6 +26,18 @@ Once you've built this item, you can use it by dragging the Effect Item to the P
 
 **NOTE**: This will not stack properly with armor potency runes or bracers of armor. If your character has either of those, I recommend changing the bonus in Rule #2 to be equal to 4 + the potency rune.
 
+## Other Stances
+
+I also wrote Rule Elements for other Stances.
+
+### Tiger Stance
+* Tiger Claw attack: [rule-tiger-stance-1.json](./rule-tiger-stance-1.json)
+* Add an Icon to the Character: [rule-tiger-stance-2.json](./rule-tiger-stance-2.json).
+
+### Wolf Stance
+* Wolf Jaw attack: [rule-wolf-stance-1.json](./rule-wolf-stance-1.json)
+* Add an Icon to the Character: [rule-wolf-stance-2.json](./rule-wolf-stance-2.json).
+
 ## Planned Updates
 
 1. Add support for different stances.
