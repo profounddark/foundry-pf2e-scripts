@@ -1,6 +1,6 @@
 # Monk Stances
 
-These scripts are intended to make the Barbarian Rage work in FoundryVTT. It's still very preliminary; basically, it's just enough to make it work for the player at my table that's a Barbarian.
+These scripts are intended to make the Monk Stances work in FoundryVTT. It's mostly functional (at least for Mountain Stance). There are a few things that are not quite properly supported; I've made notes where I could.
 
 ## Supported Versions
 
