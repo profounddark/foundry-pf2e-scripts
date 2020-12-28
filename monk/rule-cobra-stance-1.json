@@ -1,0 +1,22 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "poison",
+            "dice": 1,
+            "die": "d4"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Cobra Fang",
+    "range": "melee",
+    "traits": [
+        "agile",
+        "deadly-d10",
+        "finesse",
+        "poison",
+        "unarmed",
+        "nonlethal"
+    ]
+}

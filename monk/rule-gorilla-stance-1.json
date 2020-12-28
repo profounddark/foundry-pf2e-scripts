@@ -1,0 +1,21 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Gorilla Slam",
+    "range": "melee",
+    "traits": [
+        "backswing",
+        "forceful",
+        "grapple",
+        "unarmed",
+        "nonlethal"
+    ]
+}

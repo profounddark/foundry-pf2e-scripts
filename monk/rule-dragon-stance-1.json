@@ -1,0 +1,19 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d10"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Dragon Tail",
+    "range": "melee",
+    "traits": [
+        "backswing",
+        "unarmed",
+        "nonlethal"
+    ]
+}

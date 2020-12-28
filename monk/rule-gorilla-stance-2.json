@@ -1,0 +1,9 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "predicate": {
+      "all": ["climb"]
+    },
+    "selector": "athletics",
+    "type": "circumstance",
+    "value": 1
+  }

@@ -1,0 +1,20 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d6"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Crane Wing",
+    "range": "melee",
+    "traits": [
+        "agile",
+        "finesse",
+        "unarmed",
+        "nonlethal"
+    ]
+}

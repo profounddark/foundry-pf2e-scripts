@@ -1,0 +1,6 @@
+{
+    "key":"PF2E.RuleElement.FlatModifier",
+    "selector":"skill-check",
+    "type":"proficiency",
+    "value": "@details.level.value"
+}

@@ -1,0 +1,9 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "predicate": {
+      "all": ["feint"]
+    },
+    "selector": "deception",
+    "type": "circumstance",
+    "value": 1
+  }

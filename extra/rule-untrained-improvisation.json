@@ -1,0 +1,11 @@
+{
+    "key":"PF2E.RuleElement.FlatModifier",
+    "selector":"skill-check",
+    "type":"proficiency",
+    "value": {
+      "brackets": [
+        { "end": 6, "value": "floor(@details.level.value / 2)"},
+        { "start": 7, "value": "@details.level.value"}
+      ]
+    }
+}

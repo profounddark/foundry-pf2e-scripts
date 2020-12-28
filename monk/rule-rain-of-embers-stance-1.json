@@ -1,0 +1,21 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "fire",
+            "dice": 1,
+            "die": "d4"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Fire Talon",
+    "range": "melee",
+    "traits": [
+        "agile",
+        "finesse",
+        "fire",
+        "unarmed",
+        "nonlethal"
+    ]
+}
