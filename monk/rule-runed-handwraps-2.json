@@ -2,7 +2,7 @@
     "key": "PF2E.RuleElement.DamageDice",
     "selector": "damage",
     "predicate": {
-      "all": ["unarmed", "melee"] 
+      "all": ["unarmed"] 
     },
     "diceNumber": 1
   }

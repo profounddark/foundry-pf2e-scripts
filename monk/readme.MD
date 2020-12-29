@@ -38,6 +38,12 @@ I also wrote Rule Elements for other Stances.
 * Wolf Jaw attack: [rule-wolf-stance-1.json](./rule-wolf-stance-1.json)
 * Add an Icon to the Character: [rule-wolf-stance-2.json](./rule-wolf-stance-2.json).
 
+## Combat Handwraps
+
+Once you start using a bunch of different unarmed attacks, it creates managing Combat Handwraps (or, the Handwraps of Mighty Blows) a bit difficult. However, I figured out a solution for that! Create a NEW Equipment type Item (i.e., something that is worn but isn't a weapon or armor). Fill out the details and description as you'd like. The important part is the rule element tab. The two rules I've included here, [rule-runed-handwraps-1.json](./rule-runed-handwraps-1.json) and [rule-runed-handwraps-2.json](./rule-runed-handwraps-2.json), add a +1 to attack rolls and an additional die of damage. Add them, as appropriate, to your Combat Handwraps. You can also edit them to be more powerful by changing the 1 in each rule to a 2 or 3 (as appropriate).
+
+Property runes that add damage can be built similar to other damage die rules, just with a specific type.
+
 ## Planned Updates
 
 1. Add support for different stances.
