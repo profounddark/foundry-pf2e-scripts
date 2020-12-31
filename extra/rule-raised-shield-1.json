@@ -1,0 +1,8 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "selector": "ac",
+    "label": "Shield Raised",
+    "type": "circumstance",
+    "value": "1 + @attributes.shield.ac"
+  }
+  

@@ -1,0 +1,20 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "negative",
+            "dice": 1,
+            "die": "d4"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Shadow Grasp",
+    "range": "melee",
+    "traits": [
+        "agile",
+        "grapple",
+        "reach",
+        "unarmed"
+    ]
+}

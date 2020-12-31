@@ -1,0 +1,9 @@
+{
+    "key": "PF2E.RuleElement.FlatModifier",
+    "predicate": {
+      "all": ["grapple"]
+    },
+    "selector": "athletics",
+    "type": "circumstance",
+    "value": 2
+  }

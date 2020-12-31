@@ -1,0 +1,21 @@
+{
+    "category": "unarmed",
+    "damage": {
+        "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d6"
+        }
+    },
+    "group": "brawling",
+    "key": "PF2E.RuleElement.Strike",
+    "label": "Wind Crash",
+    "range": "range",
+    "ability": "dex",
+    "traits": [
+        "agile",
+        "propulsive",
+        "unarmed",
+        "nonlethal"
+    ]
+}
